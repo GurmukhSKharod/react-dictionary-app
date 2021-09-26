@@ -63,18 +63,19 @@ function App() {
   }));
 
 
-  const dictionaryApi = async () => {
-    try {
-      const data = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`);
-      setMeanings(data.data);
-    }catch(error){
-      console.log(error);
-    }
-  };
+  
 
   //use effect is called everytime the dependancy variable change in the square brackets [].
   useEffect(() => {
-    dictionaryApi();
+    // eslint-disable-next-line
+    const dictionaryApi = async () => {
+      try {
+        const data = await axios.get(`/api/v2/entries/${category}/${word}`);
+        setMeanings(data.data);
+      }catch(error){
+        console.log(error);
+      }
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word, category])
 

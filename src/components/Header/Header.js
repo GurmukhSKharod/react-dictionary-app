@@ -25,19 +25,6 @@ const Header = ({setCategory, category, word, setWord, lightMode}) => {
             <div className='inputs'>
                 <ThemeProvider  theme={darkTheme}>
                 <TextField className="search" value={word} onChange={(e)=>setWord(e.target.value)} label="Search a Word" />
-                    <TextField
-                        select
-                        label="Language"
-                        className="select"
-                        value={category}
-                        onChange={(e)=>handleChange(e.target.value)}
-                        >
-                            {
-                                categories.map((option) => (
-                                    <MenuItem key={option.label} value={option.label}>{option.value}</MenuItem>
-                                ))
-                            }
-                    </TextField>
                 </ThemeProvider>
             </div>
         </div>

@@ -2,7 +2,7 @@ import { TextField, createTheme, ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import './Header.css';
 
-const Header = ({setCategory, category, word, setWord, lightMode}) => {
+const Header = ({word, setWord, lightMode}) => {
 
     const darkTheme = createTheme({
         palette: {

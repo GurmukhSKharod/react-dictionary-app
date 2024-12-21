@@ -10,14 +10,9 @@
 
 .subTitle {
   font-size: 5vw;
-  font-family: "Roboto", sans-serif;
-}
-
-@media (max-width: 900px) {
-  .meanings {
-    height: 60vh;
-    overflow-x: hidden;
-  }
+  font-family: "Roboto", sans-serif; /* Keep Roboto for subtitle */
+  font-weight: 300; /* Set thinner weight for readability */
+  color: #fff; /* Ensure good contrast */
 }
 
 .singleMean {
@@ -26,9 +21,15 @@
   border-radius: 10px;
   padding: 10px 20px;
   margin: 10px 0;
+  background-color: rgb(240, 240, 240); /* Light background for readability */
+  font-family: "Roboto", sans-serif; /* Use Roboto */
+  font-weight: 300; /* Thin weight for text */
+  color: #000; /* Dark text color for contrast */
 }
 
-.audio {
-  display: flex;
-  margin: 0 auto;
+@media (max-width: 900px) {
+  .meanings {
+    height: 60vh;
+    overflow-x: hidden;
+  }
 }

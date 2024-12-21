@@ -1,7 +1,6 @@
-import { TextField, createTheme, ThemeProvider, MenuItem  } from '@material-ui/core';
+import { TextField, createTheme, ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import './Header.css';
-import categories from '../../data/category';
 
 const Header = ({setCategory, category, word, setWord, lightMode}) => {
 
@@ -14,8 +13,7 @@ const Header = ({setCategory, category, word, setWord, lightMode}) => {
         },
     });
 
-    const handleChange = (language) => {
-        setCategory(language);
+    const handleChange => {
         setWord("");
     }
 

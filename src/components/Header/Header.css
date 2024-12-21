@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 .title {
   font-size: 7vw;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: "Anton", sans-serif; 
+  font-weight: bold; 
 }
 
 .header {
@@ -13,7 +16,7 @@
   width: 100%;
 }
 
-/*if less than 900px */
+/* If viewport width is less than 900px */
 @media (max-width: 900px) {
   .header {
     justify-content: space-evenly;

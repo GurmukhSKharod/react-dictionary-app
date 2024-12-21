@@ -1,44 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .title {
-  font-size: 2vw;
+  font-size: 3vw; /* Slightly larger for emphasis */
   text-transform: uppercase;
   font-family: "Anton", sans-serif; 
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em; /* Reduced spacing for better readability */
+  text-align: center; /* Center the title text */
+  margin-bottom: 1rem; /* Add space below the title */
 }
 
 .header {
   display: flex;
+  flex-direction: column; /* Stack items vertically */
   align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  height: 4vh;
+  justify-content: center; /* Center header content */
+  height: 15vh; /* Adjust height for balance */
   width: 100%;
-  letter-spacing: 0.05em;
+  text-align: center;
 }
 
-/* If viewport width is less than 900px */
-@media (max-width: 900px) {
-  .header {
-    justify-content: space-evenly;
-    height: 4vh;
-    letter-spacing: 0.05em;
-  }
-  .title {
-    font-size: 4vw;
-    letter-spacing: 0.05em;
-  }
-}
-
+/* Inputs container */
 .inputs {
   width: 100%;
   display: flex;
-  font-size: 4vw;
-  letter-spacing: 0.05em;
+  justify-content: center; /* Center inputs horizontally */
+  gap: 1rem; /* Add space between inputs */
+  margin-top: 1rem; /* Space between header and inputs */
 }
 
 .search,
 .select {
-  width: 43%;
-  letter-spacing: 0.05em;
+  width: 40%; /* Adjust input width */
+  font-size: 1.2rem; /* Reduce font size for input text */
+  padding: 0.5rem; /* Add padding for better usability */
+}
+
+/* Responsive adjustments for screens smaller than 900px */
+@media (max-width: 900px) {
+  .title {
+    font-size: 5vw; /* Increase font size for readability */
+    letter-spacing: 0.03em;
+  }
+  
+  .header {
+    height: 20vh; /* Increase height for small screens */
+  }
+  
+  .inputs {
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 0.5rem; /* Reduce gap for smaller screens */
+  }
+  
+  .search,
+  .select {
+    width: 80%; /* Make inputs take more width on small screens */
+    font-size: 1rem; /* Slightly smaller text for compact design */
+  }
 }

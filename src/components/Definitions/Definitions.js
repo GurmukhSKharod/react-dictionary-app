@@ -3,12 +3,12 @@ import './Definitions.css'
 
 /* The dictionary api has one single large item in the JSON. In this app we refer to this entire section as meanings, so the one and only element is meanings[0]. If meanings[0] DNE, then the user did not type a valid word. 
 */
-const Definitions = ({word, category, meanings, lightMode}) => {
+const Definitions = ({word, meanings, lightMode}) => {
     return (
         <div className="meanings">
 
             {
-                (meanings[0] && word && category === "en") && (
+                (meanings[0] && word) && (
                     <audio className="audio" 
                         src={meanings[0].phonetics[0] && meanings[0].phonetics[0].audio}
                         style={{backgroundColor: "#fff", borderRadius: 10}}controls>

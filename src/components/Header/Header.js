@@ -13,9 +13,9 @@ const Header = ({setCategory, category, word, setWord, lightMode}) => {
         },
     });
 
-    const handleChange => {
-        setWord("");
-    }
+  //   const handleChange = (e) => {
+  //   setWord(e.target.value); // Correctly updates the word state
+  // };
 
     return (
         <div className='header'>

@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .title {
-  font-size: 6vw; /* Increase to make the title more prominent */
+  font-size: 4vw;
   text-transform: uppercase;
   font-family: "Anton", sans-serif;
-  letter-spacing: 0.05em; /* Consistent spacing */
+  letter-spacing: 0.05em;
   text-align: center;
-  margin-bottom: 1rem; /* Space below the title */
+  margin-bottom: 1rem;
 }
+
 
 .header {
   display: flex;

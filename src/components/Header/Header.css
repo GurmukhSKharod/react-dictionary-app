@@ -1,59 +1,68 @@
+/* Import Anton font */
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .title {
-  font-size: 3vw; /* Slightly larger for emphasis */
+  font-size: 4vw; /* Increased to make the title more prominent */
   text-transform: uppercase;
-  font-family: "Anton", sans-serif; 
-  letter-spacing: 0.03em; /* Reduced spacing for better readability */
-  text-align: center; /* Center the title text */
-  margin-bottom: 1rem; /* Add space below the title */
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.05em; /* Consistent spacing */
+  text-align: center;
+  margin-bottom: 1rem; /* Space below the title */
 }
 
 .header {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center;
-  justify-content: center; /* Center header content */
-  height: 15vh; /* Adjust height for balance */
+  justify-content: center;
+  height: 20vh; /* Adjusted height for better balance */
   width: 100%;
-  text-align: center;
 }
 
 /* Inputs container */
 .inputs {
   width: 100%;
   display: flex;
-  justify-content: center; /* Center inputs horizontally */
-  gap: 1rem; /* Add space between inputs */
+  justify-content: space-around;
   margin-top: 1rem; /* Space between header and inputs */
 }
 
 .search,
 .select {
-  width: 40%; /* Adjust input width */
-  font-size: 1.2rem; /* Reduce font size for input text */
-  padding: 0.5rem; /* Add padding for better usability */
+  width: 40%; /* Keep inputs compact */
+  font-size: 1rem; /* Reduce font size for input text */
+  padding: 0.5rem; /* Padding for better usability */
+}
+
+.message {
+  font-size: 2vw; /* Reduce the size of the large text */
+  line-height: 1.4; /* Adjust line height for readability */
+  text-align: center; /* Center the message text */
+  margin: 1rem 0; /* Add spacing around the message */
 }
 
 /* Responsive adjustments for screens smaller than 900px */
 @media (max-width: 900px) {
   .title {
-    font-size: 5vw; /* Increase font size for readability */
-    letter-spacing: 0.03em;
+    font-size: 6vw; /* Increase title font size for smaller screens */
   }
-  
+
   .header {
-    height: 20vh; /* Increase height for small screens */
+    height: 25vh; /* Adjust height for smaller screens */
   }
-  
+
   .inputs {
     flex-direction: column; /* Stack inputs vertically */
-    gap: 0.5rem; /* Reduce gap for smaller screens */
+    gap: 0.5rem; /* Space between stacked inputs */
   }
-  
+
   .search,
   .select {
-    width: 80%; /* Make inputs take more width on small screens */
-    font-size: 1rem; /* Slightly smaller text for compact design */
+    width: 80%; /* Full width inputs for small screens */
+    font-size: 0.9rem; /* Smaller font size for compact design */
+  }
+
+  .message {
+    font-size: 3vw; /* Adjust message text size */
   }
 }

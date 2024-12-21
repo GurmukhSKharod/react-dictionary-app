@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .title {
-  font-size: 4vw; /* Increased to make the title more prominent */
+  font-size: 6vw; /* Increase to make the title more prominent */
   text-transform: uppercase;
   font-family: "Anton", sans-serif;
   letter-spacing: 0.05em; /* Consistent spacing */
@@ -44,7 +44,7 @@
 /* Responsive adjustments for screens smaller than 900px */
 @media (max-width: 900px) {
   .title {
-    font-size: 6vw; /* Increase title font size for smaller screens */
+    font-size: 8vw; /* Increase title font size for smaller screens */
   }
 
   .header {

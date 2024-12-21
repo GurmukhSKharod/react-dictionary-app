@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .title {
-  font-size: 6vw;
+  font-size: 4vw;
   text-transform: uppercase;
   font-family: "Anton", sans-serif; 
   letter-spacing: 0.05em;
@@ -21,11 +21,11 @@
 @media (max-width: 900px) {
   .header {
     justify-content: space-evenly;
-    height: 10vh;
+    height: 4vh;
     letter-spacing: 0.05em;
   }
   .title {
-    font-size: 5vw;
+    font-size: 4vw;
     letter-spacing: 0.05em;
   }
 }

@@ -46,7 +46,7 @@
 }
 
 .meanings::-webkit-scrollbar {
-  width: 20px; /* Width of the scrollbar */
+  width: 8px; /* Width of the scrollbar */
 }
 
 .meanings::-webkit-scrollbar-thumb {
